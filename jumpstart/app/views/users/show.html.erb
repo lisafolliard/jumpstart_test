@@ -1,15 +1,24 @@
-<h2><%= @user.username %>'s artwork</h2>
+<h2>About <%= @user.username %></h2>
+<span class='user_about'><p>Pu got her start at age 4 when she painting all the walls in her bedroom with hand paint. Pu got her start at age 4 when she painting all the walls in her bedroom with hand paint. Pu got her start at age 4 when she painting all the walls in her bedroom with hand paint</p></span>
 
-<ul>
-  <% @user.images.each do |image| %>
-  <li><%= image_tag(image.image) %><%= image.description %>
-  <% if current_user == @user %>
-    <%= link_to 'Edit', edit_user_image_path(@user, image) %>
-    <%= link_to "Delete", user_image_path(@user, image), :method => 'delete' %>
-  <% end %>
+<div class='row'>
+  <ul>
+    <% @user.images.each do |image| %>
+      <div class='col-sm-4'>
+          <li><%= image_tag(image.image) %></li>
+          <li><%= image.description %></li>
 
-  </li>
-  <% end %>
-</ul>
+        <% if current_user == @user %>
+          <li><%= link_to 'Edit', edit_user_image_path(@user, image) %></li>
+          <li><%= link_to "Delete", user_image_path(@user, image), :method => 'delete' %></li>
+        <% end %>
+      </div>
+    <% end %>
+  </ul>
+</div>
 
-<%= link_to "Add an image", new_user_image_path(@user) %>
+<hr>
+
+    <% if current_user == @user %>
+    <%= link_to "Add an image", new_user_image_path(@user) %>
+    <% end %>

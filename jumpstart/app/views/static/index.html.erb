@@ -1,13 +1,16 @@
-<h1>jumpst<span><div class='title_font'>art</div></span></h1>
+<h1>jumpst<span class='title_font'>art</span></h1>
 
 <hr>
 
 <div class='row'>
-  <div class='col-sm-4'>
-    <ul>
-      <% @images.each do |image| %>
-      <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
-      <% end %>
-    </ul>
-  </div>
+  <ul>
+    <% @images.each do |image| %>
+      <div class='col-sm-4'>
+        <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
+        <li><%= image.description %></li>
+      </div>
+    <% end %>
+  </ul>
 </div>
+
+<hr>
