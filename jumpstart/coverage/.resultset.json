@@ -1,6 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/lisaf13/Desktop/jumpstart/spec/features/add_image_pages_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/lisaf13/Desktop/jumpstart/spec/models/image_spec.rb": [
         1,
         null,
@@ -556,12 +581,49 @@
       ],
       "/Users/lisaf13/Desktop/jumpstart/app/controllers/images_controller.rb": [
         1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
         null,
         null,
         null,
         1,
         0,
         0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
         null,
         null
       ],
@@ -570,6 +632,13 @@
         1,
         0,
         null,
+        null,
+        null
+      ],
+      "/Users/lisaf13/Desktop/jumpstart/app/controllers/users_controller.rb": [
+        1,
+        1,
+        0,
         null,
         null
       ],
@@ -595,6 +664,6 @@
         null
       ]
     },
-    "timestamp": 1445629188
+    "timestamp": 1445635320
   }
 }
