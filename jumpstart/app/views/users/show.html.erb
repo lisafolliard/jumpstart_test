@@ -1,1 +1,11 @@
 <h2>Welcome <%= @user.username %></h2>
+
+<ul>
+  <% @user.images.each do |image| %>
+  <li><%= image_tag(image.image) %><%= image.description %>
+  
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add an image", new_user_image_path(@user) %>
