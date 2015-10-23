@@ -31,6 +31,13 @@ class ImagesController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find(params[:user_id])
+    @image = Image.find(params[:id])
+    @image.destroy
+      redirect_to user_path(@user)
+  end
+
   private
 
   def image_params
