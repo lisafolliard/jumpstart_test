@@ -17,6 +17,20 @@ class ImagesController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:user_id])
+    @image = Image.find(params[:id])
+  end
+
+  def update
+    @image = Image.find(params[:id])
+    if @image.update(image_params)
+      redirect_to user_path(@image.user)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def image_params

@@ -2,8 +2,12 @@
 
 <hr>
 
-<ul>
-  <% @images.each do |image| %>
-  <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
-  <% end %>
-</ul>
+<div class='row'>
+  <div class='col-sm-4'>
+    <ul>
+      <% @images.each do |image| %>
+      <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
