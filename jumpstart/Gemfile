@@ -11,6 +11,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'hirb'
 gem 'textacular', '~> 3.0'
 gem 'devise'
+gem 'paperclip', '~> 4.1'
 
 group :development do
   gem 'byebug'

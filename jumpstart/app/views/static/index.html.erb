@@ -1,0 +1,9 @@
+<h1>jumpst<span><div class='title_font'>art</div></span></h1>
+
+<hr>
+
+<ul>
+  <% @images.each do |image| %>
+  <li><%= link_to image_tag(image.image), user_path(image.user)  %></li>
+  <% end %>
+</ul>

@@ -5,6 +5,22 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.title_font {
+  font-size: 30px;
+  font-family: 'Bad Script', cursive;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
