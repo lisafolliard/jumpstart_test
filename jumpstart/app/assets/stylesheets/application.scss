@@ -2,7 +2,13 @@
 @import "bootstrap";
 
 .container {
-  margin-top: 5px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.container-fluid {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 li {
@@ -11,6 +17,7 @@ li {
 
 img {
   max-width: 250px;
+  max-height: 250px;
 }
 
 h1 {
