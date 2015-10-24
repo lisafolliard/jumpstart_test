@@ -1,12 +1,17 @@
 require 'rails_helper'
 
-describe "add an image" do
-  it "adds an image to user page" do
+describe "edit an image" do
+  it "edit an image" do
     login_user
     click_link "Profile"
     click_link "Add an image"
     image = FactoryGirl.create(:image)
     click_on 'Save'
+    click_link "Profile"
+    click_on 'Edit'
+    fill_in 'description', with: 'Woodcut'
+    page.attach_file("MtHood", 'spec/fixtures/images/woodcut.jpg')
+    click_button 'Save'
     expect(page).to have_content "Logged in as"
   end
 

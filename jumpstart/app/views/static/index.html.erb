@@ -2,7 +2,11 @@
 
 <hr>
 
-<div class='row'>
+<!-- <div class='row'> -->
+<%= link_to "Sort by Date Added", :sort => "created_at" %>
+
+<br><br>
+
   <ul>
     <% @images.each do |image| %>
       <div class='col-sm-4'>
@@ -11,6 +15,6 @@
       </div>
     <% end %>
   </ul>
-</div>
+<!-- </div> -->
 
 <hr>
